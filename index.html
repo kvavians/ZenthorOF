@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt z Filipem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="projekt z filipem.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="showSection('home')">
+                <img id="logo" src="brukexpert.png" alt="logo" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('home')">
+                            <img src="Icon_Dom_17.11.png" alt="Uslugi" style="height: 24px; vertical-align: middle;">
+                            Home
+                        </a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('uslugi')">
+                            <img src="Icon_Uslugi_17.11.png" alt="Uslugi" style="height: 24px; vertical-align: middle;">
+                            Uslugi
+                        </a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('produkty')">
+                            <img src="Icon_Nowa_Galeria_17.11.png" alt="produkty"
+                                style="height: 24px; vertical-align: middle;">
+                            Produkty
+                        </a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="onasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">O nas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="showSection('kim')">Kim jesteśmy</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="showSection('kontakt')">Kontakt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="slideshow">
+        <img src="kostka_galeria-glowna7-copy_672.jpg" alt="slajd 1" class="img-fluid">
+        <img src="creativ_1_.jpg" alt="creativ_1_" class="img-fluid">
+        <img src="zdjecie_3.png" alt="slajd 3" class="img-fluid">
+        <img src="zdjecie_4.png" alt="slajd 4" class="img-fluid">
+        <img src="zdjecie_5.png" alt="slajd 5" class="img-fluid">
+    </div>
+
+
+    <div class="content-layout" id="layout">
+
+        <aside class="sidebar" id="sidebar">
+            <h3>Filtry i wyszukiwania</h3>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Szukaj">
+            </div>
+            <div class="filters">
+                <label><input type="checkbox" value="porotherm"> Porotherm</label>
+                <label><input type="checkbox" value="kostka"> Kostka brukowa</label>
+                <label><input type="checkbox" value="obi"> Obi</label>
+            </div>
+        </aside>
+
+        <main>
+
+            <!-- HOME -->
+            <section id="home" class="active">
+                <div class="BrukExpert">
+                    <h1>
+                        <p class="black-text">BrukExpert</p>
+                    </h1>
+                    <p>
+                        Jesteśmy częścią Grupy BrukExpert, która towarzyszy budującym inwestorom dostarczając nowoczesne
+                        i kompleksowe rozwiązania budowlane. <br>Połączenie doświadczeń i nowoczesnej technologii z
+                        wysoką jakością produktów czyni BrukExpert jednym z liderów jakości i innowacji.
+                    </p>
+
+                    <div class="blok naprzemienny">
+                        <div class="tekst">
+                            <p><i>W naszej firmie stawiamy na doświadczony zespół, dla którego jakość wykonania to
+                                    priorytet. Wykorzystujemy tylko sprawdzone techniki i materiały najwyższej klasy,
+                                    aby zapewnić, że każda nawierzchnia będzie służyć Państwu przez lata, zachowując
+                                    swoją funkcjonalność i piękno. Dbamy nie tylko o solidność, ale również o idealne
+                                    wkomponowanie realizowanego projektu w otoczenie. <br><br>Zaufaj nam w realizacji
+                                    swojej przestrzeni zewnętrznej!</i></p>
+                        </div>
+                        <div class="zdjecie">
+                            <img src="master-gloves-lays-paving-stones-600nw-2623120371.png" alt="majster-kostka">
+                        </div>
+                    </div>
+
+                    <div class="blok naprzemienny odwrotnie">
+                        <div class="tekst">
+                            <p><i>Nasza firma to nie tylko maszyny i materiały, to przede wszystkim ludzie z pasją i
+                                    fachową wiedzą. Realizujemy projekty na różną skalę, zawsze zaczynając od solidnego
+                                    przygotowania podłoża i geodezyjnego wytyczenia. Dzięki pracy w zespole, gdzie każdy
+                                    element jest dopilnowany, gwarantujemy szybkie tempo prac przy jednoczesnym
+                                    zachowaniu najwyższych standardów wykonania. <br><br>Profesjonalizm, doświadczenie i
+                                    dbałość o detale – to jest to, co nas wyróżnia.</i></p>
+                        </div>
+                        <div class="zdjecie">
+                            <img src="professional-landscape-workers-paving-driveway-600nw-2113261418.png"
+                                alt="majster-2">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Produkty -->
+            <section id="produkty">
+                <div class="produkty">
+                    <img src="porotherm.jpg" alt="porotherm" class="img-fluid"
+                        onclick="showProduct('Porotherm', 'Porotherm to marka ceramicznych bloczków...', 'porotherm.jpg')">
+
+                    <img src="Kostka-brukowa-11.jpg" alt="kostka brukowa czerwono-szara" class="img-fluid"
+                        onclick="showProduct('Kostka brukowa', 'Kostka brukowa trwała...', 'Kostka-brukowa-11.jpg')">
+
+                    <img src="Obi.jpg" alt="obi kostka szara" class="img-fluid"
+                        onclick="showProduct('Rządowa Kwadratowa', 'Kostka brukowa Obi...', 'Obi.jpg')">
+
+                    <img src="1z.png" alt="kostka modularna" class="img-fluid"
+                        onclick="showProduct('Kostka modularna', 'Płytki różnej wielkości...', '1z.png')">
+
+                    <img src="z2.png" alt="kostka jodełka" class="img-fluid"
+                        onclick="showProduct('Jodełka', 'Kostka układana w jodełkę...', 'z2.png')">
+
+                    <img src="z3.png" alt="kostka postarzana" class="img-fluid"
+                        onclick="showProduct('Kostka postarzana', 'Kostka o nieregularnych krawędziach...', 'z3.png')">
+
+                    <img src="z4.png" alt="kostka postarzana grafitowa" class="img-fluid"
+                        onclick="showProduct('Kostka grafitowa', 'Kostka w ciemnym kolorze...', 'z4.png')">
+
+                    <img src="z6.png" alt="kostka ażurowa" class="img-fluid"
+                        onclick="showProduct('Kratka ekologiczna', 'Bruk ażurowy...', 'z6.png')">
+
+                    <img src="z7.png" alt="kostka tarasowa" class="img-fluid"
+                        onclick="showProduct('Płyty tarasowe', 'Wielkoformatowe płyty...', 'z7.png')">
+
+                    <img src="z8.png" alt="kostka taras z obrzeżem" class="img-fluid"
+                        onclick="showProduct('Taras z kostki', 'Kompletny taras...', 'z8.png')">
+
+                    <img src="z9.png" alt="kostka łukowa" class="img-fluid"
+                        onclick="showProduct('Koci Łeb', 'Wzór wachlarzowo-łukowy...', 'z9.png')">
+
+                    <img src="z10.png" alt="kostka jodełka podwójna" class="img-fluid"
+                        onclick="showProduct('Jodełka dwukolorowa', 'Wzór jodełki...', 'z10.png')">
+                </div>
+
+            </section>
+
+            <!-- USŁUGI -->
+            <section id="uslugi">
+                <h1 class="black-text">🧰 Nasze usługi</h1>
+
+                <div class="zdjecia-container">
+                    <img src="kostka 1.jpg" alt="kostka 1">
+                    <img src="kostka 2.jpg" alt="kostka 2">
+                    <img src="kostka 3.jpg" alt="kostka 3">
+                </div>
+
+                <p>
+                    Brukarstwo dekoracyjne — realizujemy nowoczesne projekty dopasowane do stylu budynku.<br>
+                    Nawierzchnie przemysłowe — montujemy wytrzymałe powierzchnie dla firm i parkingów.<br> Odwodnienia —
+                    dbamy o odpływ wody i trwałość konstrukcji.<br> Oświetlenie i architektura — montujemy LED, obrzeża,
+                    donice i stopnie.<br> Serwis i renowacje — czyszczenie, impregnacja, naprawy kostki.
+                </p>
+            </section>
+
+            <!-- KIM JESTEŚMY -->
+            <section id="kim">
+                <h1>Kim jesteśmy</h1>
+                <img src="" alt="">
+                <p>
+                    Jesteśmy firmą, która powstała z pasji do nowoczesnych nawierzchni i architektury użytkowej.
+                    <br>Tworzymy przestrzenie, po których chce się chodzić – dosłownie.
+                </p>
+            </section>
+
+            <!-- KONTAKT -->
+            <section id="kontakt">
+                <h1>Kontakt</h1>
+                <p>
+                    📍 ul. Granitowa 12, 00-123 Warszawa <br>
+                    📞 +48 502 123 987 <br>
+                    📧 kontakt@brukexpert.pl <br>
+                    🌐 www.brukexpert.pl <br>
+                </p>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8002.041731098565!2d21.220912106702226!3d52.2175178796848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed38d178c3347%3A0x3d0afd5f3413279d!2sGranitowa%2012%2C%2005-077%20Warszawa!5e0!3m2!1spl!2spl!4v1762514391644!5m2!1spl!2spl"></iframe>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>Profesjonalne doradztwo</p>
+        <p>Kompleksowe rozwiązania dla budownictwa</p>
+        <p>20 zakładów produkcyjnych</p>
+    </footer>
+
+    <!-- Modal produktu -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Produkt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="productModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        function showSection(id) {
+            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+            const selected = document.getElementById(id);
+            if (selected) selected.classList.add("active");
+
+            const sidebar = document.getElementById("sidebar");
+            sidebar.style.display = id === "produkty" ? "block" : "none";
+        }
+
+        function showProduct(title, description, imgSrc) {
+            document.getElementById('productModalLabel').textContent = title;
+            document.getElementById('productModalBody').innerHTML =
+                `<img src="${imgSrc}" class="img-fluid mb-3"><p>${description}</p>`;
+
+            new bootstrap.Modal(document.getElementById('productModal')).show();
+        }
+
+        const searchInput = document.getElementById("searchInput");
+        const checkboxes = document.querySelectorAll(".filters input[type='checkbox']");
+        const images = document.querySelectorAll(".produkty img");
+
+        function applyFilters() {
+            let text = searchInput.value.toLowerCase();
+            let checked = Array.from(checkboxes).filter(c => c.checked).map(c => c.value.toLowerCase());
+
+            images.forEach(img => {
+                let alt = img.alt.toLowerCase();
+
+                let matchSearch = alt.includes(text);
+                let matchCheckbox = checked.length === 0 || checked.some(v => alt.includes(v));
+
+                img.style.display = (matchSearch && matchCheckbox) ? "block" : "none";
+            });
+        }
+
+        searchInput.addEventListener("input", applyFilters);
+        checkboxes.forEach(cb => cb.addEventListener("change", applyFilters));
+
+
+        window.addEventListener("scroll", () => {
+            document.querySelector(".navbar")
+                .classList.toggle("scrolled", window.scrollY > 20);
+        });
+
+    </script>
+</body>
+
+</html>
